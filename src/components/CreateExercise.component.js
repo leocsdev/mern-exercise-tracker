@@ -77,8 +77,8 @@ class CreateExercise extends Component {
       .post('http://localhost:5000/exercises/add/', exercise)
       .then(res => console.log(res.data));
 
-    // window.location = '/';
-    this.props.history.push('/');
+    window.location = '/';
+    // this.props.history.push('/');
   }
 
   render() {
@@ -92,7 +92,7 @@ class CreateExercise extends Component {
               ref="userInput"
               required
               className="form-control"
-              value={this.username}
+              value={this.state.username}
               onChange={this.onChangeUsername}
             >
               {this.state.users.map(user => {
