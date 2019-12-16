@@ -46,12 +46,6 @@ class CreateExercise extends Component {
     });
   }
 
-  onChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
-
   onChangeDate(date) {
     this.setState({
       date: date
